@@ -61,49 +61,32 @@ with open("ghi_explainer.txt", "r") as ghi_explainer:
 # Streamlit Sidebar and Title 
 st.set_page_config(layout="wide")
 st.title("New Solar Installation Planning")
-st.markdown("Select A County from the Dropdown Menu")
+
 expander = st.expander("Explanation of GHI")
 expander.write(ghi_explainer_)
 
 st.sidebar.header('Select A County')
 county_input = st.sidebar.selectbox(
-                    "Select a County",
+                    "Select a County from the Dropdown Menu",
                     county_names
                     )
 
 
-city = st.sidebar.text_input("Enter a City", "Input a City")
+
 st.sidebar.header('Data Sources')
 st.sidebar.markdown(intro_)
 
 #%%
 
-def county_display(county_input , city_input ):
+def county_display(county_input):
     
     geolocator = Nominatim(user_agent="GTA Lookup")
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
     
-    if city_input == "NA":
-        COUNTYind = county_names.index(county_input) - 1
-        county_name_ = county_input
-    if county_input == "NA":
-        location = geolocator.geocode(city_input+ ", Virginia, United States")
-        geo_detail = geolocator.reverse((location.latitude, location.longitude))
-        county_name = [i for i in geo_detail.address.split(",") if "County" in i]
-        
-        if len(county_name) == 1:
-            county_name_ = county_name[0].lstrip()
-            if county_name_ in county_names:
-                COUNTYind = county_names.index(county_name_) - 1
-            if county_name_ not in county_names:
-                return st.markdown("Sorry, that's not a valid Entry")
-            
-        if len(county_name) !=1:
-            county_name_ = city_input+" City"
-            if county_name_ in county_names:
-               COUNTYind = county_names.index(county_name_) - 1
-            if county_name_ not in county_names:
-               return st.markdown("Sorry, that's not a valid Entry")
+   
+    COUNTYind = county_names.index(county_input) - 1
+    county_name_ = county_input
+
             
     COORDS = va_polygons['features'][COUNTYind]['geometry']['coordinates']
     COORDS = COORDS[0]
@@ -122,15 +105,6 @@ def county_display(county_input , city_input ):
     county_lines = folium.GeoJson(COUNTY, style_function = lambda x: {'color': 'black','weight': 1.0,'fillOpacity': 0},
     	name='counties').add_to(m)
 
-    # Add hover functionality.
-    style_function = lambda x: {'fillColor': '#ffffff', 
-                                'color':'#000000', 
-                                'fillOpacity': 0.1, 
-                                'weight': 0.1}
-    highlight_function = lambda x: {'fillColor': '#000000', 
-                                    'color':'#000000', 
-                                    'fillOpacity': 0.50, 
-                                    'weight': 0.1}
 
     county_lines.add_child(folium.features.GeoJsonTooltip(['NAME'], labels=False))
     
@@ -208,7 +182,7 @@ def county_display(county_input , city_input ):
         pass
  
 #%%
-if county_input == "Commonwealth of Virginia" and city == "Input a City":
+if county_input == "Commonwealth of Virginia" :
     
     
     point = [38.003, -79.42]
@@ -237,11 +211,9 @@ if county_input == "Commonwealth of Virginia" and city == "Input a City":
     folium_static(m)
 
 
-if county_input != "Commonwealth of Virginia"  and city == "Input a City":
-    county_display(county_input, "NA")
+if county_input != "Commonwealth of Virginia"  :
+    county_display(county_input)
 
-if  city != "Input a City" and county_input == "Commonwealth of Virginia":
-    county_display("NA", city)
 
 
 
