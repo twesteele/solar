@@ -1,0 +1,135 @@
+,county,fips,ZHVI
+0,Fairfax County,51059,714451.0
+1,Virginia Beach City,51810,338701.0
+2,Prince William County,51153,491630.0
+3,Chesterfield County,51041,305592.0
+4,Loudoun County,51107,684265.0
+5,Henrico County,51087,300619.0
+6,Norfolk City,51710,244107.0
+7,Chesapeake City,51550,337521.0
+8,Arlington County,51013,948848.0
+9,Richmond City,51760,290381.0
+10,Newport News City,51700,225753.0
+11,Alexandria City,51510,756892.0
+12,Hampton City,51650,215931.0
+13,Stafford County,51179,441359.0
+14,Spotsylvania County,51177,358946.0
+15,Hanover County,51085,338192.0
+16,Albemarle County,51003,430226.0
+17,Roanoke City,51770,158144.0
+18,Portsmouth City,51740,205736.0
+19,Montgomery County,51121,247227.0
+20,Roanoke County,51161,238147.0
+21,Suffolk City,51800,285952.0
+22,Frederick County,51069,327252.0
+23,Rockingham County,51165,246376.0
+24,Lynchburg City,51680,174445.0
+25,Augusta County,51015,253270.0
+26,Bedford County,51019,257709.0
+27,James City County,51095,374967.0
+28,York County,51199,352498.0
+29,Fauquier County,51061,507022.0
+30,Pittsylvania County,51143,147691.0
+31,Franklin County,51067,248485.0
+32,Washington County,51191,168591.0
+33,Campbell County,51031,187057.0
+34,Henry County,51089,94156.0
+35,Harrisonburg City,51660,232627.0
+36,Culpeper County,51047,346372.0
+37,Tazewell County,51185,96389.0
+38,Charlottesville City,51540,396384.0
+39,Danville City,51590,69982.0
+40,Shenandoah County,51171,219642.0
+41,Wise County,51195,82690.0
+42,Manassas City,51683,420652.0
+43,Warren County,51187,294397.0
+44,Gloucester County,51073,266602.0
+45,Halifax County,51083,112855.0
+46,Prince George County,51149,239599.0
+47,Isle of Wight County,51093,308604.0
+48,Pulaski County,51155,163099.0
+49,Orange County,51137,297949.0
+50,Accomack County,51001,198491.0
+51,Louisa County,51109,250405.0
+52,Botetourt County,51023,247221.0
+53,Mecklenburg County,51117,121307.0
+54,Petersburg City,51730,85508.0
+55,Amherst County,51009,178631.0
+56,Smyth County,51173,98177.0
+57,Carroll County,51035,133763.0
+58,Wythe County,51197,139623.0
+59,Russell County,51167,103289.0
+60,Caroline County,51033,229692.0
+61,Powhatan County,51145,326987.0
+62,Dinwiddie County,51053,179371.0
+63,Winchester City,51840,236963.0
+64,Fluvanna County,51065,245257.0
+65,Lee County,51105,82917.0
+66,Salem City,51775,195372.0
+67,Fredericksburg City,51630,360216.0
+68,Buchanan County,51027,64660.0
+69,Page County,51139,181340.0
+70,Staunton City,51790,177437.0
+71,King George County,51099,330783.0
+72,Prince Edward County,51147,179681.0
+73,Scott County,51169,92481.0
+74,Hopewell City,51670,131727.0
+75,Fairfax City,51600,616984.0
+76,Rockbridge County,51163,221026.0
+77,Goochland County,51075,373047.0
+78,Waynesboro City,51820,181216.0
+79,Southampton County,51175,170327.0
+80,Patrick County,51141,127317.0
+81,New Kent County,51127,302618.0
+82,Greene County,51079,290977.0
+83,Bristol City,51520,113594.0
+84,Westmoreland County,51193,226375.0
+85,Brunswick County,51025,123223.0
+86,Colonial Heights City,51570,183151.0
+87,Giles County,51071,131436.0
+88,Buckingham County,51029,144650.0
+89,Radford City,51750,182288.0
+90,Alleghany County,51005,112479.0
+91,King William County,51101,225885.0
+92,Dickenson County,51051,60899.0
+93,Nottoway County,51135,118718.0
+94,Grayson County,51077,125771.0
+95,Floyd County,51063,172125.0
+96,Nelson County,51125,265570.0
+97,Appomattox County,51011,167977.0
+98,Manassas Park City,51685,334137.0
+99,Williamsburg City,51830,367846.0
+100,Clarke County,51043,400233.0
+101,Martinsville City,51690,62900.0
+102,Madison County,51113,249765.0
+103,Lunenburg County,51111,98671.0
+104,Amelia County,51007,214996.0
+105,Charlotte County,51037,136978.0
+106,Northampton County,51131,190256.0
+107,Falls Church City,51610,956235.0
+108,Northumberland County,51133,324460.0
+109,Greensville County,51081,90190.0
+110,Poquoson City,51735,361982.0
+111,Sussex County,51183,123096.0
+112,Lancaster County,51103,261346.0
+113,Essex County,51057,203263.0
+114,Middlesex County,51119,282495.0
+115,Cumberland County,51049,177225.0
+116,Richmond County,51159,162438.0
+117,Mathews County,51115,272063.0
+118,Franklin City,51620,136302.0
+119,Rappahannock County,51157,419388.0
+120,Charles City County,51036,196346.0
+121,Surry County,51181,189459.0
+122,Lexington City,51678,228408.0
+123,Galax City,51640,111854.0
+124,King and Queen County,51097,186915.0
+125,Bland County,51021,127409.0
+126,Buena Vista City,51530,109155.0
+127,Covington City,51580,60588.0
+128,Emporia City,51595,103383.0
+129,Craig County,51045,156876.0
+130,Bath County,51017,150108.0
+131,Norton City,51720,89149.0
+132,Highland County,51091,193493.0
+133,Bedford City,51515,No Data Available
